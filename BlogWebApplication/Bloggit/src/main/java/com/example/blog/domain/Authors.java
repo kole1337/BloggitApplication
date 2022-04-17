@@ -40,9 +40,14 @@ public class Authors {
     @Size(min = 2, message = "Username should be start at least two characters")
     private String username;
 
+    @NonNull
+    @NotNull(message = "Invalid email")
     @Email
     private String email;
 
+    @NonNull
+    @NotNull(message = "password")
+    @Size(min = 8, message = "8")
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)

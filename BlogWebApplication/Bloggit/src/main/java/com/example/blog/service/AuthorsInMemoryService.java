@@ -56,11 +56,11 @@ public class AuthorsInMemoryService implements AuthorsManager {
     @Override
     public List<Authors> getAllAuthors() { return authorsRepository.findAll(); }
 
-    @PostConstruct
-    public void init() {
-        saveAll();
-        save(new Authors("admin", "admin", "admin", "admin@admin.pl", "admin"), "ROLE_ADMIN");
-    }
+//    @PostConstruct
+//    public void init() {
+//        saveAll();
+//        save(new Authors("admin", "admin", "admin", "admin@admin.pl", "admin"), "ROLE_ADMIN");
+//    }
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
