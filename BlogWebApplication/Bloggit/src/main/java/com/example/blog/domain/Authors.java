@@ -44,8 +44,7 @@ public class Authors {
     @NotNull(message = "Invalid email")
     @Email
     private String email;
-
-    //nigga
+    
 
     @NonNull
     @NotNull(message = "password")
