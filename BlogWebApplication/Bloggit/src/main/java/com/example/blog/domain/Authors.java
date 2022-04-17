@@ -45,6 +45,8 @@ public class Authors {
     @Email
     private String email;
 
+    //nigga
+
     @NonNull
     @NotNull(message = "password")
     @Size(min = 8, message = "8")
